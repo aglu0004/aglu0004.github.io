@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture This!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="title">
+      <h1>Picture This!</h1>
+      <h4>My Really Cool Blog Post</h4>
+    </div>
+    <picture>
+      <source srcset="images/museum.jpg 400w,
+                      images/museum.jpg 800w,
+                      images/museum.jpg 1200w"
+               media="(max-width: 960px)">
+
+      <source srcset="images/museum2.jpeg 400w,
+                      images/museum2.jpeg 600w,
+                      images/museum2.jpeg 800w,"
+          sizes="50vw"
+        media="(min-width: 961px)">
+      <img src="images/museum.jpg"
+      alt="Books on a shelf">
+     </picture>
+
+  </header>
+</body>
+
+</html>
