@@ -283,7 +283,7 @@ input[type="checkbox"]{
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 480px){
 
 /* using flex to set up each element */
   nav ul{
