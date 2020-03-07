@@ -1,0 +1,332 @@
+
+
+/* Table Styles */
+
+/* added to give more space to the table, as well as to add a border to divide the sections */
+table {
+    margin: 20px 0;
+    border: 1px solid;
+  
+  }
+  /* adding more lines for style and division, also more room for each box */
+  th,
+  td {
+    border: 1px solid;
+    padding: 10px 20px;
+    
+    
+  }
+  /* turned the text white so that it is easily readable */
+  td{
+      color: aliceblue;
+
+  }
+  /* turned all even background rows a color to contrast each row so that it can be easily read */
+  tbody tr:nth-child(even) {
+    background-color: #685f73;
+  }
+  tbody tr:nth-child(odd) {
+    background-color:#d1a69b;
+  }
+  /* changed the font white to be easily read, and to make the legend stand out with italic writing */
+  .table-content{
+    color: whitesmoke;
+    font-style: italic;
+  }
+  caption{
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+ 
+/* Nav Styles */
+
+/* setting up the nav with no bullets for cleaner look, and to position them properly across the page */
+  nav ul {
+	list-style-type: none;
+	padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* style the nav boxes to match the color scheme of the website, and more formatting of button placement */
+nav a {
+	display: block;
+	border: 1px solid black;
+    margin: 0px;
+    background-color: #d1a69b;
+	padding: 10px;
+	color: #1a1a1a;
+    text-decoration: none;
+   
+}
+/* added a transition so when hovered over the button is emphasized ti the user */
+nav a:hover{
+  
+    background-color: #685f73;
+    color: whitesmoke;
+    transform: scale(1.1, 1.1);
+  transition: all 500ms;
+  content: none;
+}
+
+
+
+/* body styles */
+
+/* setting yo the background image, aswell as the color behind the content, adding the font I chose to adding to the text */
+body{
+background-color: #36454f;
+opacity: 0.9;
+background-image: url("../img/backgroundjpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background: #36454f url("../img/background.jpg") no-repeat left top;
+background-size: cover;
+color: whitesmoke;
+font-family: 'Chakra Petch', sans-serif;
+
+}
+/* adding the font to rest of the page */
+div {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+ p, h1, h2{
+   font-family: 'Chakra Petch', sans-serif;
+}
+
+#container{background-color: #36454f;
+   max-width: 1000px;
+   margin:0 auto;
+   padding:10px 20px;
+  }
+  main h1 h2 p{
+    color: #1a1a1a;
+  }
+
+  /* setting up the button to bring user back up to the top of the page, with the coloor to match color theme */
+.top-btn{
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+
+  color: #685f73;
+}
+.top-btn i:before{
+  font-size: 2em;
+}
+/* styling button for when hovered over */
+.top-btn:hover{
+  transform: scale(1.2, 1.2);
+  transition: all 500ms;
+  color: #d1a69b;
+}
+header{
+  padding-bottom: 50px;
+}
+/* styling the header for font and position, chose to have the header follow down the page as you scroll */
+header h1{
+  font-size: 1.8rem;
+  font-family: 'Chakra Petch', sans-serif;
+  padding-top: 15px;
+  text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background: #ff6961;
+    margin: 0;
+    height: 50px;
+    padding-top: 5px;
+
+    z-index: 999;
+}
+
+.content-main{
+  margin-bottom: 40px;
+  margin-top:20px;
+}
+
+/* styling the titles for all the heading for the written portions, wanted to make them more distinct compared to main content */
+main h1{
+  color: #d1a69b;
+}
+
+main h2{
+  color: #ff6961;
+}
+
+
+/* Image Styles */
+
+/* centereing all the images to the page */
+img{
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 20px;
+
+}
+
+/* setting up each image for the hover state */
+.image-style{
+  position: relative;
+  overflow: hidden;
+  
+}
+/* setting up each image for the hover state, adding the color for the slide squarem with positioning and sizing. Use of transition */
+.image-style p {
+  position: absolute;
+  top: 20px;
+  left: 100%;
+  opacity: 0.7;
+  background: #685f73;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  height: 89%;
+  transition: all 500ms ease-in;
+}
+/* hover state set to slide left */
+.image-style:hover p{
+  left:0;
+}
+.image-style p:before{
+  content: "\2039";
+  display: block;
+  
+  position: absolute;
+  top: 40%;
+  left: -30px;
+
+  font-size: 4em;
+  color: #ff6961;
+}
+/* footer styles */
+
+/*coloring, centering, and styling the footer */
+footer p{
+
+  color: #ff6961;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  background-color: #685f73;
+ 
+
+}
+/* used to centre and position the youtube video and google maps */
+iframe{
+  width: 100%;
+  height: 350px;;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Contact Form*/
+
+/* positioning the contact form */
+textarea, div{
+  display: block;
+  padding: 15px;
+ 
+
+}
+
+input[type=text],
+input[type=summary],
+input[type=email]{
+  width: 10rem;
+  height: 1.5rem
+}
+
+/* ensuring the comment box can not be resized */
+textarea{
+  resize: none;
+  width: 20rem;
+  
+ 
+}
+/* changes the outline of the box so that users can clearly see what they are clicked on */
+textarea:focus, input:focus{
+  outline-color:#685f73;
+  
+}
+
+/* setting the submit button to allign with the contact form, aswell as styling it to the theme */
+button{
+height:38px;
+background:#ff6961;
+border:0;
+padding-left: 20px;
+padding-right:20px;
+color:#ffffff;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
+
+/* aligning all text of the contact form to the left to keep all content in unison */
+body{
+  text-align: left;
+
+}
+input[type="checkbox"]{
+  height:1rem;
+  width: 1.5rem;
+ padding-left: 20px;
+}
+
+
+@media screen and (min-width: 768px){
+
+/* using flex to set up each element */
+  nav ul{
+    display: -webkit-flex;
+    display: flex;
+  }
+  nav ul li{
+    -webkit-flex-flow: row;
+    flex-flow: row;
+  
+    -webkit-flex: 1;
+    flex: 1;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+  }
+/* main content ligned up left to allow content on both sides of the screen */
+  main{
+    float: left;
+    width: 59%;
+    margin: .2rem;
+  }
+  /* floating aside to the right to make two column webpage */
+  aside{
+    float: right;
+    width: 40%;
+  }
+
+  /* ensuring the background image scales with the content in the desktop */
+  #container{
+    background-color: #36454f;
+    max-width: 90%;
+    margin:0 auto;
+    padding:10px 20px;
+   }
+   
+/* keeping the footer at the bottom of the page */
+   footer{
+     clear: both;
+   }
+   
+   caption{
+     font-size: 2rem;
+   }
+   
+ 
